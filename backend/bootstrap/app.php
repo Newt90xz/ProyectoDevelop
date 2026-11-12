@@ -12,7 +12,9 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+        // En producción la API va detrás de Caddy (HTTPS). Confiar en X-Forwarded-*
+        // hace que url() genere https:// (p. ej. photo_url). Nginx y app no se exponen.
+        $middleware->trustProxies(at: '*');
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
