@@ -39,6 +39,12 @@
     "plugins": [
       "expo-image",
       "expo-status-bar"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "fcc17c27-8e19-4898-b20e-70705c228a72"
+      }
+    },
+    "owner": "zeeloved"
   }
 }
