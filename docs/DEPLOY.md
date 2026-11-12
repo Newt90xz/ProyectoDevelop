@@ -175,7 +175,7 @@ Sin ella el mapa sale en blanco en el APK (Expo Go usa su propia key; el APK no)
 eas init                     # vincula el proyecto y escribe extra.eas.projectId en app.json
 eas env:create --name GOOGLE_MAPS_API_KEY --value <KEY> --environment preview --visibility sensitive
 ```
-En `frontend/eas.json` reemplazar `CAMBIAR-DOMINIO-AZURE` por `<DOMINIO>`.
+`frontend/eas.json` ya apunta a `https://lagoenlinea.chilecentral.cloudapp.azure.com/api`; si el dominio cambia, actualizarlo ahí.
 
 ### 5.3 Build
 ```bash

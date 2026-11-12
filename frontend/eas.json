@@ -11,14 +11,14 @@
         "buildType": "apk"
       },
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://CAMBIAR-DOMINIO-AZURE/api"
+        "EXPO_PUBLIC_API_URL": "https://lagoenlinea.chilecentral.cloudapp.azure.com/api"
       }
     },
     "production": {
       "environment": "production",
       "autoIncrement": true,
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://CAMBIAR-DOMINIO-AZURE/api"
+        "EXPO_PUBLIC_API_URL": "https://lagoenlinea.chilecentral.cloudapp.azure.com/api"
       }
     }
   }
